@@ -1,0 +1,11 @@
+.main {
+    /* height: 100%; */
+    width: 300px;
+    border: 0.125rem solid var(--secondary);
+    border-radius: 1rem;
+}
+
+.icon {
+    aspect-ratio: 1;
+    height: 100px;
+}

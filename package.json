@@ -1,0 +1,63 @@
+{
+	"name": "openscout",
+	"version": "0.1.0",
+	"description": "An open source app to view FRC team details and make predictions on their performances",
+	"author": {
+		"name": "Dominic Camill"
+	},
+	"license": "MIT",
+	"main": "./out/main.js",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build:next": "next build",
+		"start:next": "next start",
+		"lint": "eslint",
+		"start:electron": "electron-forge start",
+		"package:electron": "electron-forge package",
+		"make:electron": "electron-forge make",
+		"start": "electron-forge start",
+		"package": "electron-forge package",
+		"make": "electron-forge make"
+	},
+	"dependencies": {
+		"electron-squirrel-startup": "^1.0.1",
+		"next": "16.2.9",
+		"react": "19.2.4",
+		"react-dom": "19.2.4"
+	},
+	"devDependencies": {
+		"@electron-forge/cli": "^7.11.2",
+		"@electron-forge/maker-deb": "^7.11.2",
+		"@electron-forge/maker-rpm": "^7.11.2",
+		"@electron-forge/maker-squirrel": "^7.11.2",
+		"@electron-forge/maker-zip": "^7.11.2",
+		"@electron-forge/plugin-auto-unpack-natives": "^7.11.2",
+		"@electron-forge/plugin-fuses": "^7.11.2",
+		"@electron/fuses": "^1.8.0",
+		"@types/node": "^20",
+		"@types/react": "^19",
+		"@types/react-dom": "^19",
+		"babel-plugin-react-compiler": "1.0.0",
+		"electron": "^42.4.0",
+		"eslint": "^9",
+		"eslint-config-next": "16.2.9",
+		"typescript": "^5"
+	},
+	"build": {
+		"appId": "com.dcamill.driver-station",
+		"files": [
+			"main.js",
+			"out",
+			"ControllerInput/controller_input.exe"
+		],
+		"directories": {
+			"buildResources": "assets",
+			"output": "dist"
+		},
+		"win": {
+			"target": "portable"
+		}
+	}
+}
