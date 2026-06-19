@@ -62,6 +62,10 @@
     }
 }
 
+html {
+    interpolate-size: allow-keywords;
+}
+
 html,
 body {
     width: 100dvw;
