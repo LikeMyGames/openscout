@@ -1,0 +1,25 @@
+.main {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    width: 100%;
+    height: min-content;
+
+    min-width: 100px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    justify-content: center;
+    align-items: center;
+
+    pointer-events: none;
+
+    padding: 10px;
+
+    /* background-color: red; */
+
+    z-index: 10;
+}

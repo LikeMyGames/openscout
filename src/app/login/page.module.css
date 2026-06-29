@@ -1,0 +1,121 @@
+.page {
+    height: 100dvh;
+    width: 100dvw;
+    margin: 0px;
+    padding: 0.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--background);
+
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    /* text-emphasis-color: var(--accent);
+    color: var(--text); */
+}
+
+.main {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: min-content;
+    min-width: 500px;
+    height: min-content;
+
+
+}
+
+.main>div {
+    width: 100%;
+
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+
+    padding: 25px;
+
+    border: solid 3px var(--secondary);
+    border-radius: 40px;
+}
+
+.main>div>div {
+    width: 100%;
+
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.submit_button {
+    height: min-content;
+    width: 100%;
+
+    padding: 10px;
+
+    background-color: transparent;
+    color: var(--text);
+
+    border: solid 1.5px var(--secondary);
+    border-radius: 15px;
+
+    font-size: 28pt;
+    font-weight: 900;
+
+    transition: 125ms;
+}
+
+.submit_button:hover {
+    color: var(--secondary);
+}
+
+.divider {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    padding-block: 0px;
+    padding-inline: 35px;
+}
+
+.divider>div {
+    height: 2px;
+    width: 100%;
+
+    background-color: var(--secondary);
+}
+
+.divider>h4 {
+    text-transform: uppercase;
+
+    font-size: 12pt;
+    color: var(--secondary);
+}
+
+.switch_button {
+    height: min-content;
+    width: 100%;
+
+    padding: 10px;
+
+    background-color: transparent;
+    color: var(--text);
+
+    border: solid 3px var(--secondary);
+    border-radius: 40px;
+
+    font-size: 28pt;
+    font-weight: 900;
+
+    transition: 125ms;
+}
+
+.switch_button:hover {
+    color: var(--secondary);
+}

@@ -1,0 +1,66 @@
+.main {
+    width: max-content;
+    max-width: 45dvw;
+    height: min-content;
+
+    padding: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    pointer-events: all;
+
+    color: grey;
+}
+
+.main>h1 {
+    /* text-wrap-mode: wrap; */
+    overflow-wrap: break-word;
+    word-break: break-all;
+    font-size: 12pt;
+    color: inherit;
+}
+
+.main>button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: min-content;
+    height: min-content;
+
+    padding: 0px;
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    color: inherit;
+}
+
+.main>button span {
+    transition: 125ms;
+}
+
+.main>button:hover span {
+    transform: scale(1.35);
+}
+
+.type_log {
+    background-color: rgb(84, 181, 255);
+}
+
+.type_warning {
+    background-color: rgb(255, 219, 99);
+}
+
+.type_error {
+    background-color: rgb(255, 96, 96);
+    color: rgb(84, 84, 84);
+}

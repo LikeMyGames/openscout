@@ -1,0 +1,32 @@
+.main {
+    width: 100%;
+    height: min-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sso {
+    height: 50px;
+    width: 50px;
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sso>img {
+    aspect-ratio: 1;
+    height: 100%;
+
+    transition: 125ms;
+}
+
+.sso:hover>img {
+    transform: scale(1.1);
+}

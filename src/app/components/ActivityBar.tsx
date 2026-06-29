@@ -1,12 +1,18 @@
 import Icon from "@/components/Icon"
 import style from "./ActivityBar.module.css"
 import { MainWindowContext } from "@/utils/contexts"
-import { useContext } from "react"
+import { useContext, useState } from "react"
 
 export default function ActivityBar() {
+	const [expanded, setExpanded] = useState(false);
 	const [, setMainWindow] = useContext(MainWindowContext);
 	return (
-		<div className={style.main} >
+		<div className={`${style.main} ${expanded ? style.expanded : ""}`} >
+			<button className={style.icon} title={expanded ? "Collapse" : "Expand"} onClick={() => { setExpanded(!expanded); }} >
+				<Icon iconName={expanded ? "left_panel_close" : "left_panel_open"} />
+				<h3>Rankings</h3>
+			</button>
+			<div className={style.navigation_divider} />
 			<button className={style.icon} title="Rankings" onClick={() => { setMainWindow("rankings"); }} >
 				<Icon iconName="crown" />
 				<h3>Rankings</h3>

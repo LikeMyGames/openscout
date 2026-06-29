@@ -1,0 +1,41 @@
+.main {
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.main>h4 {
+
+
+    position: absolute;
+    left: 15px;
+    top: -7.5px;
+
+    padding-inline: 5px;
+
+    line-height: 11pt;
+    font-size: 11pt;
+    font-weight: 400;
+
+    color: var(--secondary);
+    background-color: var(--background);
+}
+
+.main>input {
+    width: 100%;
+    height: min-content;
+
+    padding: 10px;
+    padding-left: 20px;
+
+    border: solid 1.5px var(--secondary);
+    border-radius: 15px;
+
+    background-color: transparent;
+    outline: none;
+    margin: 0px;
+
+    color: var(--text);
+}
